@@ -3,3 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+.service{
+    height: 100vh;
+    background-color: #f5f1cc;
+    font-family: 'Roboto';
+    color: #000;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+    padding-top: 100px;
+}
+.service > div{
+    width: calc(100%/3);
+    width: 420px;
+    height: 407px;
+    background: rgba(106, 0, 0, 0.5);
+    border-radius: 12px;
+    /* height: fit-content; */
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    padding: 0 24px;
+    margin: 0 5px;
+    }
+.service .image{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.service .image > img{
+    background-color: #D9D9D9;
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+}
+.service > .backend{
+    background-color: #6A0000;
+    margin-top: calc(-407px/2);
+}
+.service > div > .stack{
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 50px;
+    margin: 20px 0;
+}

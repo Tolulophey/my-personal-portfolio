@@ -3,3 +3,90 @@
     padding: 0;
     box-sizing: border-box;
 }
+.testimonial{
+    height: 100vh;
+    background-color: #f5f1cc;
+    font-family: 'Roboto';
+    color: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 120px;
+    padding-top: 100px;
+}
+.testimonial > h2{
+    width: 458px;
+    height: 112px;
+    font-weight: 800;
+    margin-bottom: 60px;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+   
+}
+.testimonies, .change{
+    display: flex;
+    /* width: 60%; */
+}
+.testimony{
+    text-align: center;
+    width: 432px;
+    height: 440px;
+    background: #B7B4A5;
+    padding: 0 25px;
+    /* backdrop-filter: blur(5px); */
+    border-radius: 18px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin:0 50px;
+}
+.testimony > .image{
+    margin: 0 auto;
+    height: 124px;
+    width: 124px;
+    border-radius: 50%;
+    justify-content: center;
+    margin-top: -62px
+}
+.testimony > .name{
+    color: #FFE922;
+}
+.testimony > .company{
+    color: #6A0000;
+}
+.testimony > .text{
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #FFFFFF;
+}
+.change{
+    display: flex;
+    margin: 25px 0;
+}
+.change > .front{
+    width: 432px;
+    display: flex;
+}
+
+.change > .back{
+    width: 50%;
+    width: 432px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+.change > .back > .back-color, .change > .front > .front-color{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #6a0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.change > .front> .front-color{
+    background-color: #d9d9d9;
+}

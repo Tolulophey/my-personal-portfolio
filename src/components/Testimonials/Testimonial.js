@@ -1,9 +1,15 @@
 import React from 'react'
-import './testimonial.css'
 
-function Testimonial() {
+function Testimonial(props) {
   return (
-    <div>Testimonial</div>
+    <div className="testimony">
+      <div className="image">
+        <img src={props.testifier} alt="testimony" />
+      </div>
+      <p className="name">{props.name}</p>
+      <p className="company">{props.company}</p>
+      <p className="text">{props.text}</p>
+    </div>
   )
 }
 

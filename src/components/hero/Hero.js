@@ -11,10 +11,10 @@ function Hero() {
       <Header />
       <div className="container">
         <div className="left">
-          <h1>Hi! There</h1>
-          <h1>I'm a Full-Stack Web Developer</h1>
+          <h1>Hi!</h1>
+          <h1>I'm Tolulope Amole</h1>
           <img src={vector1} alt="vector" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit Tempor volutpat nunc, egestas pulvinar turpis.</p>
+          <p>I'm a Full Stack Developer with more than a year of experience who is very proficient in using HTML, CSS, JavaScript, React, and Python in developing a very friendly and responsive user interface powered on any Database Management System.</p>
         </div>
         <div className="right">
           <img src={ellipse} alt="ring" />

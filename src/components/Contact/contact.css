@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    font-family: 'Roboto';
+    color: #000;
+    height: 100vh; 
+    padding: 0 120px;
+    padding-top: 100px;
+}
+.contact > .left{
+    width: 50%;
+}
+.contact > form{
+    width: 50%;
+}

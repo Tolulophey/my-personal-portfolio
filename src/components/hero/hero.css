@@ -6,7 +6,6 @@
 .hero{
     font-family: 'Roboto';
     position: relative;
-    line-height: 75px;
     color: #FFFFFF;
     background-color: #6A0000;
     height: 100vh; 
@@ -31,6 +30,15 @@
     font-weight: 600;
     font-size: 64px;
     line-height: 75px;
+}
+.container > .left > p{
+    /* width: 700px; */
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+color: #FFFFFF;
 }
 .container > .left > img{
     position: absolute;

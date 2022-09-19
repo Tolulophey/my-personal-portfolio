@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #420202;
+    font-family: 'Roboto';
+    color: #fff;
+    height: 100vh; 
+    padding: 0 120px;
+    padding-top: 100px;
+}

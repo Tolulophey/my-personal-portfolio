@@ -4,13 +4,80 @@
     box-sizing: border-box;
 }
 .about{
+    display: flex;
+    flex-direction: column;
+    position: relative;
     height: 100vh;
     background-color: #fff;
     font-family: 'Roboto';
-    /* position: relative; */
-    line-height: 75px;
-    color: #FFFFFF;
+    color: #000;
     height: 100vh; 
     display: flex;
     padding: 0 120px;
+    padding-top: 100px;
 }
+.about .top{
+    width: 783px;
+    height: 225px;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+
+color: #000000;
+}
+.about .bottom{
+    display: flex;
+}
+.about .bottom > .left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height:69vh;
+}
+.about .bottom > .left > img{
+    width: 80%;
+}
+.about .bottom > .right {
+    width: 50%;
+}
+.about .bottom > .right > .description > p{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 80px;
+    color: rgba(115, 119, 119, 0.7);
+}
+.about .bottom > .right > .description .point > p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #353131;
+}
+.about .bottom > .right > .description .point{
+    display: flex;
+    margin-bottom: 20px;
+}
+.about .bottom > .right > .description .point > img{
+    margin-right: 10px;
+}
+.about > .bottom > .right > .counts{
+    display: flex;
+    position: absolute;
+    width: 710px;
+    height: 150px;
+    left: 652px;
+    bottom: 0;
+    line-height: 20px;
+    color: #FFFFFF;
+    background: #6A0000;
+    border-radius: 24px 24px 0px 0px;
+}
+.about > .bottom > .right > .counts > div{
+    width: calc(100%/3);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} 
