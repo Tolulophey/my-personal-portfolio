@@ -11,7 +11,7 @@ function Navbar() {
         <li>Portfolio</li>
         <li>Contact</li>
       </ul>
-      <button>Buy Now</button>
+      <button>Hire Now</button>
     </div>
   )
 }

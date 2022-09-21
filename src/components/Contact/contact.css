@@ -4,19 +4,109 @@
     box-sizing: border-box;
 }
 .contact{
-    display: flex;
-    align-items: center;
     height: 100vh;
-    background-color: #fff;
+    width: 100%;
+    background-color: #420202;
     font-family: 'Roboto';
     color: #000;
     height: 100vh; 
     padding: 0 120px;
     padding-top: 100px;
+    position: relative;
 }
-.contact > .left{
-    width: 50%;
+form{
+    padding: 20px;
+}
+form input[type='text'], form input[type='email'], form textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background-color: #f5f1cc;
+    border-radius: 5px;
+}
+form input[type='text']::placeholder, form input[type='email']::placeholder, form textarea::placeholder{
+    color: #fff;
+    color: #000;
 }
 .contact > form{
-    width: 50%;
+    /* background-color: aqua; */
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.contact > form > .details{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+.contact > form > details > input{
+    width: 45%;
+}
+.contact > form > details > input.name{
+    margin-right: 5%;
+}
+.contact > form > details > input.email{
+    margin-left: 5%;
+}
+.contact > form textarea{
+    margin: 10px 0;
+}
+.contact > form textarea{
+    min-height: 150px;
+    resize: none;
+}
+.contact > form input[type='submit']{
+    padding: 10px;
+    width: 150px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #000;
+}
+.contact > form input[type='submit']:hover{
+    background-color: #f5f1cc;
+    color: #000;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 120px;
+    height: 300px;
+    background-color: #000;
+    color: #fff;
+}
+.footer img{
+    width: 20px;
+    height: 20px;
+    margin:0 10px;
+}
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+hr.top{
+    margin-top: 100px;
+}
+.media {
+    margin-top: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-top: 4px solid rgba(115, 119, 119, 0.7);
+    border-bottom: 4px solid rgba(115, 119, 119, 0.7);
+    justify-content: space-between;
+}
+.media div{
+    display: flex;
+    align-items: center;
+
+}
+.footer .copyright{
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import logo from '../../images/logo.svg'
 import brand from '../../images/brand-name.svg'
+import menu from '../../images/hamburger_menu.svg'
 import './header.css'
 
 function Header() {
@@ -12,6 +13,7 @@ function Header() {
             <img src={brand} alt="brand" />
         </div>
         <Navbar />
+      <img className='menu' src={menu} alt="menu" />
     </header>
   )
 }
