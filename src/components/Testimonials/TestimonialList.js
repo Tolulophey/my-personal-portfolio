@@ -15,7 +15,7 @@ function TestimonialList() {
         />
     })
   return (
-    <div className='testimonial'>
+    <div id='Testimonials' className='testimonial'>
         <h2>What's Our Client Say About Us</h2>
         <div className="testimonies">
             {testimony}

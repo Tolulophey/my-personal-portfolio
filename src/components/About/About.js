@@ -6,7 +6,7 @@ import star from '../../images/star.svg'
 
 function About() {
   return (
-    <div className='about' id='about'>
+    <div className='about' id='About'>
       <div className='top'>We Are Here To Make Your Website Look More Elegant And Stylish!</div>
       <div className="bottom">
         <div className="left">

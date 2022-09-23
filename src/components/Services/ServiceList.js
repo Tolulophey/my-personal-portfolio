@@ -14,7 +14,7 @@ function ServiceList() {
         />
     })
   return (
-    <div className='service'>
+    <div id='Services' className='service'>
         {service}
     </div>
   )

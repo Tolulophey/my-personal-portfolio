@@ -5,7 +5,6 @@
 }
 .hero{
     font-family: 'Roboto';
-    position: relative;
     color: #FFFFFF;
     background-color: #6A0000;
     height: 100vh; 
@@ -13,14 +12,16 @@
 .hero > .container{
     display: flex;
     padding: 0 120px;
+    height: 100%;
 }
 .container > .left {
     width: 60%;
     padding-top: 225px;
-    position: relative;
+    height: 100%;
 }
 .container >.right {
     width: 40%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

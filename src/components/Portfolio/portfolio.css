@@ -5,13 +5,158 @@
 }
 .portfolio{
     display: flex;
+    /* justify-content: center; */
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
     background-color: #420202;
     font-family: 'Roboto';
     color: #fff;
     height: 100vh; 
     padding: 0 120px;
     padding-top: 100px;
+}
+.portfolio > .button{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.portfolio > .button > button{
+    display: block;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+}
+.portfolio > .button > button.active{
+    color: #f5f1cc;
+    padding: 0 20px;
+    border-bottom: 3px solid #f5f1cc;
+}
+.portfolio > .button > button:hover{
+    color: #f5f1cc;
+    padding: 0 20px;
+    border-bottom: 3px solid #f5f1cc;
+}
+.portfolio > .projects-container {
+    width: 100%;
+}
+
+.portfolio > .projects-container > .frontend,
+.portfolio > .projects-container > .backend,
+.portfolio > .projects-container > .fullstack{
+    display: none;
+    /* display: flex; */
+    width: 100%;
+}
+.portfolio > .projects-container > .frontend > .project-container,
+.portfolio > .projects-container > .backend > .project-container,
+.portfolio > .projects-container > .fullstack > .project-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-bottom: 20px;
+    position: relative;
+}
+.portfolio > .projects-container > .frontend > .project-container > .project ,
+.portfolio > .projects-container > .backend > .project-container > .project,
+.portfolio > .projects-container > .fullstack > .project-container > .project{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.portfolio > .projects-container > .frontend > .project-container > .project > img ,
+.portfolio > .projects-container > .backend > .project-container > .project > img  ,
+.portfolio > .projects-container > .fullstack > .project-container > .project > img {
+    width: 100%;
+    padding: 20px;
+}
+.portfolio > .projects-container > .frontend > .project-container > .details ,
+.portfolio > .projects-container > .backend > .project-container > .details,
+.portfolio > .projects-container > .fullstack > .project-container > .details{
+    width: 100%;
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #f5f1cc;
+    opacity: 0.5;
+    height: 100%;
+}
+.portfolio > .projects-container > .frontend > .project-container:hover > .details ,
+.portfolio > .projects-container > .backend > .project-container:hover > .details,
+.portfolio > .projects-container > .fullstack > .project-container:hover > .details{
+    display: flex;
+}
+
+.portfolio > .projects-container > .frontend > .project-container > .details > .arrow ,
+.portfolio > .projects-container > .backend > .project-container > .details > .arrow ,
+.portfolio > .projects-container > .fullstack > .project-container > .details > .arrow {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+.portfolio > .projects-container > .frontend > .project-container > .details  > .info ,
+.portfolio > .projects-container > .backend > .project-container > .details > .info ,
+.portfolio > .projects-container > .fullstack > .project-container > .details >  .info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+.portfolio > .projects-container > .frontend > .project-container > .details  > .info > h2,
+.portfolio > .projects-container > .backend > .project-container > .details > .info > h2,
+.portfolio > .projects-container > .fullstack > .project-container > .details >  .info > h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links,
+.portfolio > .projects-container > .backend > .project-container > .details > .info > .links,
+.portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links a,
+.portfolio > .projects-container > .backend > .project-container > .details > .info > .links a,
+.portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links a{
+    display: block;
+}
+.portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links a > img,
+.portfolio > .projects-container > .backend > .project-container > .details > .info > .links a > img,
+.portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links a > img{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+}
+.portfolio > .projects-container > .frontend.active{
+    display: flex;
+}
+.portfolio > .projects-container > .backend.active{
+    display: flex;
+}
+.portfolio > .projects-container > .fullstack.active{
+    display: flex;
 }

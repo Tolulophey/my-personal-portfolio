@@ -6,7 +6,7 @@ import './contact.css'
 
 function Contact() {
   return (
-    <div className='contact'>
+    <div id='Contact' className='contact'>
       <form action="">
           <div className="details">
             <input type="text" name='name' className='name' id='name' placeholder='Name' />
