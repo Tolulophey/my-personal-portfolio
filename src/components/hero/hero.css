@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 .hero{
+    width: 100%;
     font-family: 'Roboto';
     color: #FFFFFF;
     background-color: #6A0000;
@@ -11,13 +12,18 @@
 }
 .hero > .container{
     display: flex;
+    align-items: center;
+    width: 100%;
     padding: 0 120px;
     height: 100%;
 }
 .container > .left {
-    width: 60%;
-    padding-top: 225px;
-    height: 100%;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
 }
 .container >.right {
     width: 40%;
@@ -27,7 +33,7 @@
     align-items: center;
 }
 .container > .left > h1{
-    width: 700px;
+    width: 100%;
     font-weight: 600;
     font-size: 64px;
     line-height: 75px;
@@ -74,4 +80,19 @@ color: #FFFFFF;
 }
 .down > .img-container > img{
     margin: auto;
+}
+@media screen and (max-width:900px) {
+    .hero > .container {
+        padding: 0 50px;
+        padding-top: 100px;
+    }
+    .container > .left > h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .container > .left > p {
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 24px;
+    }
 }

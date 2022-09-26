@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .service{
-    height: 100vh;
+    width: 100%;
     background-color: #f5f1cc;
     font-family: 'Roboto';
     color: #000;
@@ -16,8 +16,8 @@
     padding-top: 100px;
 }
 .service > div{
-    width: calc(100%/3);
     width: 420px;
+    max-width: calc(100%/3);
     height: 407px;
     background: rgba(106, 0, 0, 0.5);
     border-radius: 12px;
@@ -52,4 +52,19 @@
     font-size: 45px;
     line-height: 50px;
     margin: 20px 0;
+}
+
+@media screen and (max-width:900px), (max-width:1000px) {
+    .service {
+        padding: 0 50px;
+        padding-top: 100px;
+    }
+    .service > div {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .service > div > .stack {
+        font-size: 35px;
+        line-height: 40px;
+    }
 }

@@ -16,9 +16,9 @@ function Navbar() {
         <ul>
           <a href='#Home'><li onClick={()=>setShowMenu(false)}>Home</li></a>
           <a href='#About'><li onClick={()=>setShowMenu(false)}>About</li></a>
-          <a href='#Testimonials'><li onClick={()=>setShowMenu(false)}>Testimonials</li></a>
           <a href='#Services'><li onClick={()=>setShowMenu(false)}>Services</li></a>
           <a href='#Portfolio'><li onClick={()=>setShowMenu(false)}>Portfolio</li></a>
+          <a href='#Testimonials'><li onClick={()=>setShowMenu(false)}>Testimonials</li></a>
           <a href='#Contact'><li onClick={()=>setShowMenu(false)}>Contact</li></a>
       </ul>
       <button onClick={()=>setShowMenu(false)}>Hire Now</button>

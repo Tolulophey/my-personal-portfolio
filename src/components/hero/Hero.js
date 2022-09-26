@@ -8,7 +8,7 @@ import arrow from '../../images/arrow.svg'
 function Hero() {
   const [showMenu, setShowMenu] = useState(false)
   return (
-    <div className='hero'>
+    <div className='hero' id='Home'>
       <Header />
       <div className="container">
         <div className="left">
