@@ -4,9 +4,9 @@ import Projects from './Projects'
 
 
 function ProjectList(props) {
-    console.log(props.showBE)
  const frontEnd = data.FEProjects.map((project)=>{
        return   <Projects 
+                key={project.id}
                 project={project.image}
                 name={project.name}
                 deployed_link={project.deployed_link}
@@ -14,7 +14,8 @@ function ProjectList(props) {
                 />
  })
  const backEnd = data.BEProjects.map((project)=>{
-        return <Projects 
+        return <Projects
+                key={project.id}
                 project={project.image}
                 name={project.name}
                 deployed_link={project.deployed_link}
@@ -23,6 +24,7 @@ function ProjectList(props) {
  })
  const fullStack = data.FSProjects.map((project)=>{
         return <Projects 
+                key={project.id}
                 project={project.image}
                 name={project.name}
                 deployed_link={project.deployed_link}
@@ -32,6 +34,11 @@ function ProjectList(props) {
 
   return (
     <>
+        <div className={props.showAll ? 'all active' : "all"}>
+            {frontEnd[0]}
+            {backEnd[0]}
+            {fullStack[0]}
+        </div>
         <div className={props.showFE ? 'frontend active' : "frontend"}>
             {frontEnd}
         </div>

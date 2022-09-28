@@ -1,14 +1,25 @@
-import React, {useState} from 'react'
+import React, {useContext, useEffect} from 'react'
 import './hero.css'
 // import vector1 from '../../images/vector1.svg'
 import Header from '../header/Header'
 import ellipse from '../../images/ellipse.svg'
 import arrow from '../../images/arrow.svg'
+import {ScrollContext} from '../../App'
+
 
 function Hero() {
-  const [showMenu, setShowMenu] = useState(false)
+  const scroll = useContext(ScrollContext);
+  useEffect(() => {
+    if(scroll.stopScrolling){
+      document.body.style.overflowY = "hidden"
+    }else if(!scroll.stopScrolling){
+      document.body.style.overflowY = 'visible';
+    }
+    
+  }, [scroll.stopScrolling])
+  
   return (
-    <div className='hero' id='Home'>
+    <div className='hero' id='Home' >
       <Header />
       <div className="container">
         <div className="left">
@@ -22,7 +33,7 @@ function Hero() {
       </div>
       <div className='down'>
         <div className="img-container">
-          <img src={arrow} alt="arrow" onClick={()=>setShowMenu(!showMenu)}/>
+          <img src={arrow} alt="arrow"/>
         </div>
       </div>
     </div>

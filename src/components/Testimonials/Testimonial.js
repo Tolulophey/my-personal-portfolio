@@ -1,10 +1,11 @@
 import React from 'react'
 
 function Testimonial(props) {
+  
   return (
-    <div className="testimony">
+    <div className={`testimony ${props.className}`}>
       <div className="image">
-        <img src={props.testifier} alt="testimony" />
+        <img src={props.image} alt={props.name} />
       </div>
       <p className="name">{props.name}</p>
       <p className="company">{props.company}</p>
@@ -12,5 +13,4 @@ function Testimonial(props) {
     </div>
   )
 }
-
 export default Testimonial

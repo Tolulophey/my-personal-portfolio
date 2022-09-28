@@ -4,15 +4,18 @@
     box-sizing: border-box;
 }
 .contact{
-    height: 100vh;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #420202;
     font-family: 'Roboto';
     color: #000;
-    height: 100vh; 
     padding: 0 120px;
-    padding-top: 100px;
+    padding-top: 150px;
     position: relative;
+    padding-bottom: 300px;
 }
 form{
     padding: 20px;
@@ -110,4 +113,57 @@ hr.top{
     justify-content: center;
     align-items: center;
     color:  #737777;;
+}
+@media screen and (max-width:900px){
+    
+     .contact{
+        padding: 0 30px;
+        padding-top: 100px;
+    }
+    .footer {
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width:400px), (max-width:600px){
+    
+     .contact {
+        align-items: flex-start;
+        padding: 0 30px;
+        padding-top: 100px;
+        height: 100%;
+    }
+    .contact > form{
+        width: 100%;
+    }
+    .contact > form > .details {
+        width: 100%;
+        margin: 10px 0;
+        display: block;
+    }
+    .contact > form > .details > input{
+        margin: 10px 0;
+    }
+    .footer{
+        padding: 0 50px;
+    }
+    .media {
+        margin-top: 50px;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .media div {
+        height: calc(200px/3);
+    }
+    .footer .copyright {
+        height: 50px;
+    }
+}
+@media screen and (max-width:300px){
+    
+     .contact {
+        padding: 100px 15px 300px 15px;
+    }
+    
 }

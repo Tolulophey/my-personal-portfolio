@@ -6,12 +6,13 @@ import './service.css'
 function ServiceList() {
     const service = data.map(service=>{
         return <Service 
-            image={service.image}
-            class_name={service.name}
-            alt={service.name}
-            service={service.service}
-            description={service.description}
-        />
+                key={service.id}
+                image={service.image}
+                class_name={service.name}
+                alt={service.name}
+                service={service.service}
+                description={service.description}
+            />
     })
   return (
     <div id='Services' className='service'>

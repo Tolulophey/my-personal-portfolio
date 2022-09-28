@@ -13,7 +13,8 @@
     background-color: #420202;
     font-family: 'Roboto';
     color: #fff;
-    height: 100vh; 
+    min-height: 100vh; 
+    height: 100%;
     padding: 0 120px;
     padding-top: 100px;
 }
@@ -47,13 +48,14 @@
     width: 100%;
 }
 
+.portfolio > .projects-container > .all,
 .portfolio > .projects-container > .frontend,
 .portfolio > .projects-container > .backend,
 .portfolio > .projects-container > .fullstack{
     display: none;
-    /* display: flex; */
     width: 100%;
 }
+.portfolio > .projects-container > .all > .project-container,
 .portfolio > .projects-container > .frontend > .project-container,
 .portfolio > .projects-container > .backend > .project-container,
 .portfolio > .projects-container > .fullstack > .project-container{
@@ -62,11 +64,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 60vh;
     margin-bottom: 20px;
     position: relative;
 }
-.portfolio > .projects-container > .frontend > .project-container > .project ,
+.portfolio > .projects-container > .all > .project-container > .project 
+,.portfolio > .projects-container > .frontend > .project-container > .project ,
 .portfolio > .projects-container > .backend > .project-container > .project,
 .portfolio > .projects-container > .fullstack > .project-container > .project{
     width: 100%;
@@ -75,12 +77,14 @@
     justify-content: center;
     position: relative;
 }
+.portfolio > .projects-container > .all > .project-container > .project > img ,
 .portfolio > .projects-container > .frontend > .project-container > .project > img ,
 .portfolio > .projects-container > .backend > .project-container > .project > img  ,
 .portfolio > .projects-container > .fullstack > .project-container > .project > img {
     width: 100%;
     padding: 20px;
 }
+.portfolio > .projects-container > .all > .project-container > .details ,
 .portfolio > .projects-container > .frontend > .project-container > .details ,
 .portfolio > .projects-container > .backend > .project-container > .details,
 .portfolio > .projects-container > .fullstack > .project-container > .details{
@@ -94,12 +98,13 @@
     opacity: 0.5;
     height: 100%;
 }
+.portfolio > .projects-container > .all > .project-container:hover > .details ,
 .portfolio > .projects-container > .frontend > .project-container:hover > .details ,
 .portfolio > .projects-container > .backend > .project-container:hover > .details,
 .portfolio > .projects-container > .fullstack > .project-container:hover > .details{
     display: flex;
 }
-
+.portfolio > .projects-container > .all > .project-container > .details > .arrow ,
 .portfolio > .projects-container > .frontend > .project-container > .details > .arrow ,
 .portfolio > .projects-container > .backend > .project-container > .details > .arrow ,
 .portfolio > .projects-container > .fullstack > .project-container > .details > .arrow {
@@ -113,6 +118,7 @@
     top: 0;
     left: 0;
 }
+.portfolio > .projects-container > .all > .project-container > .details  > .info ,
 .portfolio > .projects-container > .frontend > .project-container > .details  > .info ,
 .portfolio > .projects-container > .backend > .project-container > .details > .info ,
 .portfolio > .projects-container > .fullstack > .project-container > .details >  .info {
@@ -126,12 +132,14 @@
     top: 0;
     left: 0;
 }
+.portfolio > .projects-container > .all > .project-container > .details  > .info > h2,
 .portfolio > .projects-container > .frontend > .project-container > .details  > .info > h2,
 .portfolio > .projects-container > .backend > .project-container > .details > .info > h2,
 .portfolio > .projects-container > .fullstack > .project-container > .details >  .info > h2{
     font-size: 30px;
     margin-bottom: 10px;
 }
+.portfolio > .projects-container > .all > .project-container > .details  > .info > .links,
 .portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links,
 .portfolio > .projects-container > .backend > .project-container > .details > .info > .links,
 .portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links{
@@ -139,11 +147,13 @@
     align-items: center;
     justify-content: center;
 }
+.portfolio > .projects-container > .all > .project-container > .details  > .info > .links a,
 .portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links a,
 .portfolio > .projects-container > .backend > .project-container > .details > .info > .links a,
 .portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links a{
     display: block;
 }
+.portfolio > .projects-container > .all > .project-container > .details  > .info > .links a > img,
 .portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links a > img,
 .portfolio > .projects-container > .backend > .project-container > .details > .info > .links a > img,
 .portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links a > img{
@@ -151,12 +161,50 @@
     height: 30px;
     margin: 0 20px;
 }
-.portfolio > .projects-container > .frontend.active{
-    display: flex;
+.portfolio > .projects-container > .all > .project-container, 
+.portfolio > .projects-container > .frontend > .project-container, 
+.portfolio > .projects-container > .backend > .project-container, 
+.portfolio > .projects-container > .fullstack > .project-container {
+        width: 50%;
 }
-.portfolio > .projects-container > .backend.active{
-    display: flex;
-}
+.portfolio > .projects-container > .all.active,
+.portfolio > .projects-container > .frontend.active,
+.portfolio > .projects-container > .backend.active,
 .portfolio > .projects-container > .fullstack.active{
     display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:900px){
+     .portfolio {
+        padding: 0 50px;
+        padding-top: 100px;
+    }
+    
+}
+@media screen and (max-width:400px), (max-width:600px){
+     .portfolio {
+        padding: 0 30px;
+        padding-top: 100px;
+        min-height: 100vh;
+        height: 100%;
+    }
+    .portfolio > .projects-container > .all > .project-container, 
+    .portfolio > .projects-container > .frontend > .project-container, 
+    .portfolio > .projects-container > .backend > .project-container, 
+    .portfolio > .projects-container > .fullstack > .project-container {
+        width: 100%;
+        height: auto;
+    }
+    .portfolio > .projects-container > .all.active,
+    .portfolio > .projects-container > .frontend.active,
+    .portfolio > .projects-container > .backend.active,
+    .portfolio > .projects-container > .fullstack.active{
+        display: flex;
+        /* flex-direction: column; */
+    }
+}
+@media screen and (max-width:300px){
+     .portfolio {
+        padding: 100px 15px 30px 15px;
+    }
 }

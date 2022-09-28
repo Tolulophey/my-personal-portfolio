@@ -4,11 +4,14 @@
     box-sizing: border-box;
 }
 .hero{
+    display: flex;
+    align-items: center;
     width: 100%;
     font-family: 'Roboto';
     color: #FFFFFF;
     background-color: #6A0000;
-    height: 100vh; 
+    min-height: 100vh;
+    height: 100%;
 }
 .hero > .container{
     display: flex;
@@ -16,6 +19,7 @@
     width: 100%;
     padding: 0 120px;
     height: 100%;
+    padding-top: 120px;
 }
 .container > .left {
         width: 60%;
@@ -81,7 +85,7 @@ color: #FFFFFF;
 .down > .img-container > img{
     margin: auto;
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:900px), (max-width:700px) {
     .hero > .container {
         padding: 0 50px;
         padding-top: 100px;
@@ -94,5 +98,43 @@ color: #FFFFFF;
         margin-top: 30px;
         font-size: 20px;
         line-height: 24px;
+    }
+}
+
+@media screen and (max-width:400px), (max-width:600px) {
+    .hero{
+        min-height: 100vh;
+        padding-bottom: 30px;
+    }
+    .hero > .container {
+        padding: 0 50px;
+        padding-top: 100px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .container > .left {
+        width: 100%;
+        order: 2;
+    }
+    .container > .left > h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .container > .left > p {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .container > .right {
+        width: 100%;
+        order: 1;
+    }
+}
+@media screen and (max-width:300px){
+    .hero{
+        padding: 100px 10px 30px 10px;
+    }
+    .hero > .container {
+        padding: 0 10px;
     }
 }
