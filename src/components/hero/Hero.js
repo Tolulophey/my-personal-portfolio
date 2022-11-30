@@ -6,7 +6,6 @@ import ellipse from '../../images/ellipse.svg'
 import arrow from '../../images/arrow.svg'
 import {ScrollContext} from '../../App'
 
-
 function Hero() {
   const scroll = useContext(ScrollContext);
   useEffect(() => {

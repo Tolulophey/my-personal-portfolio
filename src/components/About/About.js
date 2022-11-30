@@ -3,10 +3,15 @@ import './about.css'
 import person from '../../images/person.svg'
 import tick from '../../images/tick.svg'
 import star from '../../images/star.svg'
+import Header from '../header/Header'
 
 function About() {
+  const section = <h2>About</h2>
   return (
     <div className='about' id='About'>
+      <Header
+        first={section}
+      />
       <div className='top'>We Are Here To Make Your Website Look More Elegant And Stylish!</div>
       <div className="bottom">
         <div className="left">
