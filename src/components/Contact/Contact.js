@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
   const form = useRef();
-  const succcess = toast.success('🦄 Message Sent!', {
+  const succcess = ()=> toast.success('🦄 Message Sent!', {
                               position: "top-right",
                               autoClose: 5000,
                               hideProgressBar: false,
@@ -17,7 +17,7 @@ function Contact() {
                               progress: undefined,
                               theme: "colored",
                             });
-  const failure = toast.error('🦄 Error, Try again!', {
+  const failure = ()=> toast.error('🦄 Error, Try again!', {
                               position: "top-right",
                               autoClose: 5000,
                               hideProgressBar: false,
@@ -69,7 +69,6 @@ function Contact() {
         pauseOnHover
         theme="colored"
       />
-      {/* <Footer /> */}
     </div>
   )
 }
