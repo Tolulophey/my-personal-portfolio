@@ -168,6 +168,15 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width:1000px) {
+    .portfolio {
+        padding-bottom: 100px;
+        width: 100%;
+        min-height: 500px;
+    }
+}
+
 @media screen and (max-width:900px){
      .portfolio {
         padding: 0 50px;

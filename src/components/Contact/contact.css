@@ -65,9 +65,19 @@ form input[type='text']::placeholder, form input[type='email']::placeholder, for
     color: #000;
 }
 
+
+@media screen and (max-width:1000px) {
+    .contact {
+        padding-bottom: 100px;
+        width: 100%;
+        min-height: auto;
+    }
+}
+
 @media screen and (max-width:900px){
      .contact{
         padding: 0 30px;
+        padding-bottom: 100px;
         padding-top: 100px;
     }
 }

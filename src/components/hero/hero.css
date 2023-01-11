@@ -42,8 +42,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
-
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 .container > .left > img{
     position: absolute;
@@ -80,7 +79,14 @@ color: #FFFFFF;
 .down > .img-container > img{
     margin: auto;
 }
-@media screen and (max-width:900px), (max-width:700px) {
+@media screen and (max-width:1000px){
+    .hero{
+        padding-bottom: 100px;
+        width: 100%;
+        min-height: auto;
+    }
+}
+@media screen and (max-width:900px){
     .hero > .container {
         padding: 0 50px;
         padding-top: 100px;
@@ -96,10 +102,10 @@ color: #FFFFFF;
     }
 }
 
-@media screen and (max-width:400px), (max-width:600px) {
+@media screen and (max-width:600px) {
     .hero{
         min-height: 100vh;
-        padding-bottom: 30px;
+        padding-bottom: 100px;
     }
     .hero > .container {
         padding: 0 50px;
