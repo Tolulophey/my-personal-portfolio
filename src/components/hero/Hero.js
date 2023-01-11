@@ -2,7 +2,7 @@ import React from 'react'
 import './hero.css'
 // import vector1 from '../../images/vector1.svg'
 import Header from '../header/Header'
-import ellipse from '../../images/ellipse.svg'
+import profile from '../../images/profile-picture.webp'
 import arrow from '../../images/arrow.svg'
 
 function Hero() {
@@ -16,7 +16,8 @@ function Hero() {
           <p>I'm a Full Stack Developer with more than a year of experience who is very proficient in using HTML, CSS, JavaScript, React, and Python in developing a very friendly and responsive user interface powered on any Database Management System.</p>
         </div>
         <div className="right">
-          <img src={ellipse} alt="ring" />
+          {/* <img src={ellipse} alt="ring" /> */}
+          <img src={profile} alt="profile" />
         </div>
       </div>
       <div className='down'>

@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react'
-// import menu from '../../images/hamburger_menu.svg'
-import close from '../../images/close.png'
 import {GiHamburgerMenu} from 'react-icons/gi';
-// import {AiOutlineClose} from 'react-icons/ai';
+import {AiOutlineClose} from 'react-icons/ai';
 
 
 function Navbar() {
@@ -24,9 +22,8 @@ function Navbar() {
   return (
     <nav className={showMenu ? 'navbar active' : 'navbar'}>
       <div className="menu">
-        {/* <img className='hamburger' src={menu} alt="menu"  onClick={showSideBar}/> */}
         <GiHamburgerMenu color="fff"  className="hamburger" onClick={showSideBar}/>
-        <img className='close' src={close} alt="close" onClick={hideSideBar}/>
+        <AiOutlineClose color="fff"  className='close' onClick={hideSideBar}/>
       </div>
       <div className="nav-menu">
         <ul  onClick={hideSideBar}>

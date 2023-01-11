@@ -3,6 +3,7 @@ import Hero from './components/hero/Hero';
 import About from './components/About/About';
 import './index';
 import ServiceList from './components/Services/ServiceList';
+import Footer from "./components/Footer/Footer"
 import TestimonialList from './components/Testimonials/TestimonialList';
 import Contact from './components/Contact/Contact';
 import Portfolio from './components/Portfolio/Portfolio';
@@ -16,6 +17,7 @@ function App() {
       <Portfolio />
       <TestimonialList />
       <Contact />
+      <Footer />
     </div>
   );
 }
