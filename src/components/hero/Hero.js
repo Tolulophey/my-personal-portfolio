@@ -13,7 +13,8 @@ function Hero() {
         <div className="left">
           <h1>Hi!</h1>
           <h1>I'm Tolulope Amole</h1>
-          <p>I'm a Full Stack Developer with more than a year of experience who is very proficient in using HTML, CSS, JavaScript, React, and Python in developing a very friendly and responsive user interface powered on any Database Management System.</p>
+          <p>I'm a Full Stack Developer with more than a year of experience who is very proficient in using HTML, CSS, JavaScript, ReactJS, Python and NodeJS in developing a very friendly and responsive user interface powered on any Database Management System.</p>
+          <p></p>
         </div>
         <div className="right">
           {/* <img src={ellipse} alt="ring" /> */}

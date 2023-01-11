@@ -38,6 +38,12 @@ hr.top{
     align-items: center;
     color:  #737777;;
 }
+
+@media screen and (max-width:1000px){
+    .footer{
+        padding: 0 50px;
+    }
+}
 @media screen and (max-width:900px){
     .footer {
         padding: 0 30px;

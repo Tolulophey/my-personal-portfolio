@@ -3,7 +3,6 @@
     flex-direction: column;
     position: relative;
     background-color: #fff;
-    font-family: 'Roboto';
     color: #000;
     min-height: 100vh;
     height: 100%; 
@@ -43,7 +42,7 @@ color: #000000;
 .about .bottom > .right > .description > p{
     font-weight: 700;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 40px;
     margin-bottom: 80px;
     color: rgba(115, 119, 119, 0.7);
 }
@@ -102,6 +101,9 @@ color: #000000;
     }
     .about .bottom > .right > .description > .points {
         padding-bottom: 150px;
+    }
+    .about .bottom > .right > .description > p {
+        line-height: 28px;
     }
 }
 @media screen and (max-width:900px) {

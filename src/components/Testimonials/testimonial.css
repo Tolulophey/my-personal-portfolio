@@ -1,7 +1,6 @@
 .testimonial{
     width: 100%;
     background-color: #f5f1cc;
-    font-family: 'Roboto';
     color: #000;
     min-height: 100vh;
     height: 100%;
@@ -37,7 +36,7 @@
     font-family: 'Poppins';
     font-weight: 600;
     font-size: 24px;
-    line-height: 36px;
+    line-height: 40px;
     margin:0 50px;
 }
 .testimony > .image{
@@ -94,9 +93,11 @@
         width: 100%;
         min-height: auto;
     }
+    .testimony {
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
-
-
 @media screen and (max-width:900px) {
     .testimonial {
         padding: 0 50px;
