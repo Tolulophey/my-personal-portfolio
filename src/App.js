@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Hero from './components/hero/Hero';
 import About from './components/About/About';
 import './index';
@@ -7,16 +7,10 @@ import TestimonialList from './components/Testimonials/TestimonialList';
 import Contact from './components/Contact/Contact';
 import Portfolio from './components/Portfolio/Portfolio';
 
-export const ScrollContext = React.createContext()
-
 function App() {
-  const [stopScrolling, setStopScrolling] = useState(false)
-  
   return (
-    <div className={stopScrolling ? "App overflow_hidden" : "App"}>
-      <ScrollContext.Provider value={{stopScrolling: stopScrolling, setStopScrolling:setStopScrolling}}>
-        <Hero />
-      </ScrollContext.Provider>
+    <div className="App">
+      <Hero />
       <About />
       <ServiceList />
       <Portfolio />

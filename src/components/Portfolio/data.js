@@ -1,64 +1,64 @@
-import project1 from '../../images/FE/html-table.PNG'
-import project2 from '../../images/FE/product-landing-page.PNG'
-import project3 from '../../images/FE/survey-form.PNG'
-import project4 from '../../images/FE/technical-documentation-page.PNG'
-import project5 from '../../images/FE/technical-documentation-page.PNG'
+import FE1 from '../../images/FE/tesla-website-clone.jpg'
+import FE2 from '../../images/FE/data-management.jpg'
+import FE3 from '../../images/FE/zuri-website-cloning.png'
+import BE1 from '../../images/BE/team-vulture2-backend.png'
+// import BE2 from '../../images/BE/team-vulture2-backend.png'
+// import BE3 from '../../images/BE/team-vulture2-backend.png'
+
 
 
 // const FEProjects = [project1, project2, project3, project4, project5]
 const FEProjects = [
     {
         id: 1,
-        image: project1,
-        name: 'sample1',
-        github: 'https://sample.com',
-        deployed_link: 'https://deployedlink.com'
+        image: FE1,
+        name: 'Tesla Website Cloning',
+        github: 'http://github.com/Tolulophey/Tesla-Website-Clone',
+        deployed_link: 'https://tesla-website-clone-tolulophey.vercel.app/'
     },
     {
         id: 2,
-        image: project2,
+        image: FE2,
+        name: 'Data Management Agency',
+        github: 'https://github.com/Tolulophey/Data-Management-Agency',
+        deployed_link: 'https://data-management-agency.netlify.app/'
+    },
+    {
+        id: 3,
+        image: FE3,
         name: 'sample2',
-        github: 'https://sample.com',
-        deployed_link: 'https://deployedlink.com'
+        github: 'https://github.com/Tolulophey/zuri-website-cloning',
+        deployed_link: 'https://tolulophey.github.io/zuri-website-cloning/'
     }
 
 ]
 
 const BEProjects = [
     {   
-        id: 3,
-        image: project3,
-        name: 'sample3',
-        github: 'https://sample.com',
-        deployed_link: 'https://deployedlink.com'
+        id: 1,
+        image: BE1,
+        name: 'Terms and Conditions Generator',
+        github: 'https://team-vulture2-backend.vercel.app/',
+        deployed_link: 'https://team-vulture2-backend.vercel.app/'
     },
-    {
-        id: 4,
-        image: project4,
-        name: 'sample4',
-        github: 'https://sample.com',
-        deployed_link: 'https://deployedlink.com'
-    }
+    // {
+    //     id: 2,
+    //     image: BE2,
+    //     name: 'Todo API',
+    //     github: 'https://sample.com',
+    //     deployed_link: 'https://deployedlink.com'
+    // },
+    // {
+    //     id: 3,
+    //     image: BE3,
+    //     name: 'Todo API',
+    //     github: 'https://sample.com',
+    //     deployed_link: 'https://deployedlink.com'
+    // }
 
 ]
 
-const FSProjects = [
-    {
-        id: 5,
-        image: project5,
-        name: 'sample5',
-        github: 'https://sample.com',
-        deployed_link: 'https://deployedlink.com'
-    },
-    {
-        id: 6,
-        image: project1,
-        name: 'sample1',
-        github: 'https://sample.com',
-        deployed_link: 'https://deployedlink.com'
-    }
-
-]
+const FSProjects = []
 
 const data = {FEProjects, BEProjects, FSProjects}
 

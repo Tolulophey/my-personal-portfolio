@@ -1,22 +1,11 @@
-import React, {useContext, useEffect} from 'react'
+import React from 'react'
 import './hero.css'
 // import vector1 from '../../images/vector1.svg'
 import Header from '../header/Header'
 import ellipse from '../../images/ellipse.svg'
 import arrow from '../../images/arrow.svg'
-import {ScrollContext} from '../../App'
 
 function Hero() {
-  const scroll = useContext(ScrollContext);
-  useEffect(() => {
-    if(scroll.stopScrolling){
-      document.body.style.overflowY = "hidden"
-    }else if(!scroll.stopScrolling){
-      document.body.style.overflowY = 'visible';
-    }
-    
-  }, [scroll.stopScrolling])
-  
   return (
     <div className='hero' id='Home' >
       <Header />

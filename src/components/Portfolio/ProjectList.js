@@ -35,9 +35,9 @@ function ProjectList(props) {
   return (
     <>
         <div className={props.showAll ? 'all active' : "all"}>
-            {frontEnd[0]}
-            {backEnd[0]}
-            {fullStack[0]}
+            {frontEnd}
+            {backEnd}
+            {fullStack}
         </div>
         <div className={props.showFE ? 'frontend active' : "frontend"}>
             {frontEnd}
@@ -45,9 +45,9 @@ function ProjectList(props) {
         <div className={props.showBE ? "backend active" : "backend"}>
             {backEnd}
         </div>
-        <div className={props.showFS ? "fullstack active" : "fullstack"}>
+        {/* <div className={props.showFS ? "fullstack active" : "fullstack"}>
             {fullStack}
-        </div>
+        </div> */}
 
     </>
   )

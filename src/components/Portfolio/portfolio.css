@@ -136,8 +136,9 @@
 .portfolio > .projects-container > .frontend > .project-container > .details  > .info > h2,
 .portfolio > .projects-container > .backend > .project-container > .details > .info > h2,
 .portfolio > .projects-container > .fullstack > .project-container > .details >  .info > h2{
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 10px;
+    color: black;
 }
 .portfolio > .projects-container > .all > .project-container > .details  > .info > .links,
 .portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links,
