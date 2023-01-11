@@ -5,9 +5,7 @@
     background-color: #000;
     color: #fff;
 }
-.footer img{
-    width: 20px;
-    height: 20px;
+.footer svg{
     margin:0 10px;
 }
 .footer a {
@@ -30,6 +28,9 @@ hr.top{
     align-items: center;
 
 }
+.footer .mail > svg{
+    background-color: #00a0dc;
+}
 .footer .copyright{
     display: flex;
     height: 100px;
@@ -40,6 +41,10 @@ hr.top{
 @media screen and (max-width:900px){
     .footer {
         padding: 0 30px;
+    }
+    .footer svg {
+         margin: 0px;
+         height: 20px;
     }
 }
 @media screen and (max-width:400px), (max-width:600px){

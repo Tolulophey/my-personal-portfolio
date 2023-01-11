@@ -149,12 +149,10 @@
 .portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links a{
     display: block;
 }
-.portfolio > .projects-container > .all > .project-container > .details  > .info > .links a > img,
-.portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links a > img,
-.portfolio > .projects-container > .backend > .project-container > .details > .info > .links a > img,
-.portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links a > img{
-    width: 30px;
-    height: 30px;
+.portfolio > .projects-container > .all > .project-container > .details  > .info > .links a > svg,
+.portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links a > svg,
+.portfolio > .projects-container > .backend > .project-container > .details > .info > .links a > svg,
+.portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links a > svg{
     margin: 0 20px;
 }
 .portfolio > .projects-container > .all > .project-container, 

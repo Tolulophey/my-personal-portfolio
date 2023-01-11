@@ -26,7 +26,7 @@ const FEProjects = [
     {
         id: 3,
         image: FE3,
-        name: 'sample2',
+        name: 'Zuri Website Clone',
         github: 'https://github.com/Tolulophey/zuri-website-cloning',
         deployed_link: 'https://tolulophey.github.io/zuri-website-cloning/'
     }

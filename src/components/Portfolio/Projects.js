@@ -1,8 +1,8 @@
 import React from 'react'
 // import arrowBack from '../../images/arrowBack.svg'
 // import arrowFront from '../../images/arrowFront.svg'
-import link from '../../images/link.png'
-import github from '../../images/github.png'
+import {AiOutlineGithub} from 'react-icons/ai';
+import {AiOutlineLink } from 'react-icons/ai';
 
 function Projects(props) {
 
@@ -28,8 +28,12 @@ function Projects(props) {
                 <div className="info">
                     <h2>{props.name}</h2>
                     <div className="links">
-                        <a href={props.github_link}><img src={github} alt="github_link" /></a>
-                        <a href={props.deployed_link}><img src={link} alt="deployed_link" /></a>
+                        <a href={props.github_link}>
+                            <AiOutlineGithub size="30px"/>
+                        </a>
+                        <a href={props.deployed_link}>
+                            <AiOutlineLink size="30px" color="#000"/>
+                        </a>
                     </div>
                 </div>
             </div>
