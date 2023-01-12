@@ -84,7 +84,6 @@
         padding: 0 30px;
     }
     .navbar > .menu {
-        overflow-y: hidden;
         display: block;
         position: absolute;
         top: 40px;
@@ -121,6 +120,7 @@
         height: auto;
         width: 70%;
         z-index: 22;
+        transition: all .15s ease;
     }
     .navbar > .nav-menu button {
         margin: 20px 0;

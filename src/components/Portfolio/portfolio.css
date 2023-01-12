@@ -181,7 +181,55 @@
         padding: 0 50px;
         padding-top: 100px;
     }
+    .portfolio > .projects-container > .all > .project-container > .details, .portfolio > .projects-container > .frontend > .project-container > .details, .portfolio > .projects-container > .backend > .project-container > .details, .portfolio > .projects-container > .fullstack > .project-container > .details {
+        display: block;
+        opacity: 1;
+        position: static;
+        background-color: #f5f1cc;
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+        margin: 0 20px;
+    }
+    .portfolio > .projects-container > .all > .project-container > .details  > .info, .portfolio > .projects-container > .frontend > .project-container > .details  > .info, .portfolio > .projects-container > .backend > .project-container > .details > .info, .portfolio > .projects-container > .fullstack > .project-container > .details >  .info {
+        position: static;
+        justify-content: flex-end;
+    }
+    .portfolio > .projects-container > .all > .project-container > .project > img ,
+    .portfolio > .projects-container > .frontend > .project-container > .project > img ,
+    .portfolio > .projects-container > .backend > .project-container > .project > img  ,
+    .portfolio > .projects-container > .fullstack > .project-container > .project > img {
+        padding: 0px;
+    }
+    .portfolio > .projects-container > .all > .project-container > .details  > .info > .links, .portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links, .portfolio > .projects-container > .backend > .project-container > .details > .info > .links, .portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .portfolio > .projects-container > .all > .project-container, .portfolio > .projects-container > .frontend > .project-container, .portfolio > .projects-container > .backend > .project-container, .portfolio > .projects-container > .fullstack > .project-container {
+        padding: 0 20px;
+        
+    }
     
+    .portfolio > .projects-container > .all > .project-container > .details  > .info > h2, .portfolio > .projects-container > .frontend > .project-container > .details  > .info > h2, .portfolio > .projects-container > .backend > .project-container > .details > .info > h2, .portfolio > .projects-container > .fullstack > .project-container > .details >  .info > h2 {
+        margin-bottom: 0px;
+        color: black;
+        padding: 5px;
+        font-size: 16px;
+    }
+    .portfolio > .projects-container > .all > .project-container > .details  > .info > .links a, .portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links a, .portfolio > .projects-container > .backend > .project-container > .details > .info > .links a, .portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links a {
+        display: flex;
+        width: 50%;
+        background-color: #fff;
+        border: 1px solid grey;
+        padding: 5px;
+        justify-content: center;
+    }
+    .portfolio > .projects-container > .all > .project-container > .details  > .info > .links a > svg, .portfolio > .projects-container > .frontend > .project-container > .details  > .info > .links a > svg, .portfolio > .projects-container > .backend > .project-container > .details > .info > .links a > svg, .portfolio > .projects-container > .fullstack > .project-container > .details >  .info > .links a > svg {
+        margin: 0 20px;
+        height: 20px;
+        width: 20px;
+    }
 }
 @media screen and (max-width:400px), (max-width:600px){
      .portfolio {
@@ -202,7 +250,10 @@
     .portfolio > .projects-container > .backend.active,
     .portfolio > .projects-container > .fullstack.active{
         display: flex;
-        /* flex-direction: column; */
+    }
+    .portfolio > .projects-container > .all > .project-container, .portfolio > .projects-container > .frontend > .project-container, .portfolio > .projects-container > .backend > .project-container, .portfolio > .projects-container > .fullstack > .project-container {
+        width: 50%;
+        padding: 0;
     }
 }
 @media screen and (max-width:300px){
